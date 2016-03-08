@@ -1,0 +1,18 @@
+name: check_usolved_veeam_backups
+description: "file:///README.md"
+url: "https://github.com/usolved/check_usolved_veeam_backups"
+tags: Veeam,Backup,Jobs
+vendor: Veeam
+target: Backup
+type: Plugin
+license: mit
+releases: 
+  - 
+    name: 1.0
+    description: "Initial release"
+    files: 
+      - 
+        name: check_usolved_veeam_backups.ps1
+        url: "file:///check_usolved_veeam_backups.ps1"
+        description: "1.0 release"
+        checksum: 153ec1d0d7f11d232598d1da24975d3a
