@@ -13,17 +13,17 @@ Ricardo Klement ([www.usolved.net](http://usolved.net))
 
 ### Prerequisites
 
-1. Make sure to have the [NSClient++](https://www.nsclient.org) agent installed on your Veeam server. 
+- Make sure to have the [NSClient++](https://www.nsclient.org) agent installed on your Veeam server. 
 Refer to the NSClient++ documentation if you don't already have the agent installed.
 
-2. The PowerShell [VeeamPSSnapIn](https://www.veeam.com/kb1489) is also required to use this script. 
+- The PowerShell [VeeamPSSnapIn](https://www.veeam.com/kb1489) is also required to use this script. 
 
 Now copy the PowerShell script check_usolved_veeam_backups.ps1 into your NSClient++ folder of the Veeam server.
 For example into this path: C:\nsclient\scripts
 
 Execute check_usolved_veeam_backups.ps1 to see if the script is working fine.
 
-3. Nagios plugin check_nrpe needs to be installed on your monitoring server.
+- Nagios plugin check_nrpe needs to be installed on your monitoring server.
 
 
 ### Add command to NSClient++ configuration
