@@ -36,10 +36,13 @@ if($excluded_jobs -ne "")
 }
 
 
-#Adding required SnapIn
-if((Get-PSSnapin -Name VeeamPSSnapIn -ErrorAction SilentlyContinue) -eq $null)
-{
-	Add-PsSnapin VeeamPSSnapIn
+# Import Powershell moudle 
+if (Get-Module -Name Veeam*){
+    Get-Module -Name Veeam* | Import-Module -DisableNameChecking
+}
+else{
+    Write-Host "Required PS Module not found!"
+    exit 2
 }
 
 #-------------------------------------------------------------------------------
